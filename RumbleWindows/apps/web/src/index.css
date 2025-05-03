@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles beyond Tailwind can be added here */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500;
+  }
+  .btn-secondary {
+    @apply btn bg-gray-600 hover:bg-gray-700 text-white focus:ring-gray-500;
+  }
+  .btn-danger {
+    @apply btn bg-red-600 hover:bg-red-700 text-white focus:ring-red-500;
+  }
+}

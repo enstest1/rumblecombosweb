@@ -1,0 +1,11 @@
+{
+  "name": "rumble-windows-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix apps/api\" \"npm run dev --prefix apps/web\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
